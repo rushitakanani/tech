@@ -1,0 +1,397 @@
+:root {
+    --bglightblue: #5e87eb;
+    --bgwhite: #fff;
+    --bgdarkblue: #0056b3;
+    --bgblack: #000;
+    --fontscabin:cabin;
+
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/cabin-v26-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/cabin-v26-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/cabin-v26-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/cabin-v26-latin-regular.woff') format('woff'),
+        /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('../fonts/cabin-v26-latin-regular.ttf') format('truetype'),
+        /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('../fonts/cabin-v26-latin-regular.svg#Cabin') format('svg');
+    /* Legacy iOS */
+}
+h1 ,h2, h3 ,h4 ,h5, h6 ,ul {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: var(--fontscabin);
+}
+.fixed {
+    position: fixed;
+    top:0; 
+    left:0;
+    width: 100%; 
+    background-color:var(--bgwhite);
+  }
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-btn {
+    background-color: var(--bglightblue);
+    margin: 10px;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+.navbar {
+    font-family: cabin;
+}
+.nav-btn:hover {
+    background-color: var(--bgdarkblue);
+    color: var(--white);
+}
+.dropdown-menu {
+    border: none;
+}
+.dropdown_menu ul li a{
+    border-bottom: 1px solid #dcdbdb;
+}
+.dropdown_menu li:last-child a{
+    border-bottom: none;
+}
+.icon {
+    padding: 0 4px;
+    color: #6c757d !important;
+}
+.bener-btn {
+    border-radius: 30px;
+    box-shadow: 0 7px 25px rgb(123, 104, 238, 0.25);
+    font-weight: 500;
+}
+.bener-btn-2{
+    background-color: var(--bglightblue);
+    padding: 10px 40px;
+}
+.bener-btn-2:hover,
+.bener-btn-1:hover{
+    background-color: var(--bgdarkblue);
+    transition-duration: .3;
+}
+
+.bener-btn-1 {
+    color: var(--bglightblue);
+    padding: 10px 40px;
+}
+.main-benar>* {
+    margin-bottom: 30px;
+}
+.navbar-toggler {
+    border: none;
+}
+.services_toggler{
+    background-color: #fff;
+}
+.spacer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.main_menu li a{
+   font-size: 17px; 
+   padding: 0 10px;
+}
+.card_box:hover{
+    background-color: var(--bglightblue);
+    transition: all 0.3s ease 0s;
+    color: var(--bgwhite);
+}
+.card_icon{
+    color: #5e87eb;
+    padding: 20px;
+    background-color: #D7D7D72B;
+    border-radius: 50%;
+}
+.card_box:hover .card_icon{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
+.card_box:hover  p{
+    color: var(--bgwhite);
+}
+.card_box:hover .srvices-link{
+    color: #fff;
+}
+.srvices-link{
+    color: #5e87eb;
+}
+.card_box p{
+    color: gray;
+}
+.web_btn p{
+    padding: 10px 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-left: 3px solid;
+    border-color: #5e87eb;
+    position: relative;
+}
+.btn .website-btn-1 {
+    border-radius: none;
+}
+.web_btn div p{
+    border-bottom-right-radius: 10px ;
+}
+.web_btn::before{
+    content: attr(data-title);
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
+.web_btn::after{
+    content: '';
+    height: 100%;
+    width: 0;
+    background-image: linear-gradient(to left, #8000ff, #5e87eb);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+    border-bottom-right-radius: 10px ;
+
+}
+.web_btn:hover::after{
+    width: 100%;
+}
+.web_btn:hover::before{
+    color: var(--bgwhite);
+}
+.single-counter h3 {
+    font-size: 20px;
+}
+.icon {
+    color: #555 !important;
+    font-size: 14px;
+}
+#home{
+    color: #fff;
+}
+.main_menu li a{
+    color: #555 !important;
+
+}
+.dropdown_menu a{
+    font-size: 17px;
+    padding: 0 10px;
+}
+.dropdown_menu a{
+    color: #555 !important;
+
+}
+ .dropdown_menu li a{
+    color: #555 !important;
+}
+.dropdown_services li a{
+    color: #555;
+    padding: 0 4px;
+
+}
+.icon_services {
+    color: var(--bgwhite);
+    font-size: 15px;
+    padding: 1px 4px;
+}
+.bg-color{
+    background-image: linear-gradient(to left, #8000ff, #5e87eb );
+
+}
+.card-img {
+    margin-left: 20px;
+}
+.pro {
+    border-radius: 30px;
+    color: var(--bglightblue);
+    background-color: var(--bgwhite);
+}
+.pro:hover {
+    color: var(--bgwhite);
+    background-color: var(--bglightblue);
+}
+.btn-card {
+    background-color: var(--bglightblue);
+    color: var(--bgwhite);
+    border-radius: 20px;
+}
+.btn-card:hover {
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+}
+.card {
+    border: none;
+}
+.team-card{
+    position: relative;
+}
+.team_icon{
+    padding-top: 140px;
+}
+.team-social {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+    height: 315px;
+    width: 280px;
+    background-color: #8156aa;
+    opacity: .6;
+}
+
+
+.team-card:hover .team-social{
+    display: block;
+}
+.mobile_menu_1 a,
+.mobile_menu_1 i {
+    color: #fff;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.counter-area_1 {
+    background-image: url(https://barakahit.net/html/techmax/assets/img/banner-bg.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.counter-area_2{
+    background-image: url(img/banner-bg.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.counter-area {
+    background-image: url(https://barakahit.net/html/techmax/assets/img/banner-bg.jpg);
+}
+.pro_gallery:hover {
+    background-color: var(--bglightblue);
+}
+
+.pro_social {
+    color: var(--bglightblue);
+}
+
+.check {
+    color: var(--bgwhite);
+    background-color: #5e87eb;
+    border-radius: 50%;
+}
+
+.check_1 {
+    color: var(--bgwhite);
+    background-color: rgb(190, 92, 92);
+    border-radius: 50%;
+}
+
+.sec_layear {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    text-align: center;
+}
+.services_img{
+    background-image: url('https://barakahit.net/html/techmax/assets/img/page-title-bg-3.jpg');
+}
+.pro_img  img:hover{
+    background-color: #a967ec;
+    /* opacity: .8; */
+}
+
+.price {
+    font-size: 45px;
+    font-weight: 700;
+    color: #5e87eb;
+    display: inline-block;
+}
+
+
+ .accordion-item {
+    border-bottom: 3px solid grey;
+}
+.collapsed{
+    color: #212529;
+    font-weight: 600;
+    font-family: cabin;
+}
+.collapsed:hover{
+    color: var(--bglightblue);
+}
+
+
+.pet{
+    width: 45px;
+    height: 45px;
+    background-color:var(--bglightblue);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+.pet a{
+    text-decoration: none;
+    color: #fff;
+}
+.accordion-item{
+    border: none;
+    background-color: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #fff !important;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.team_pro{
+    
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #8156aa;
+    opacity: .6;
+}
+.pro_img:hover .team_pro{
+    display: block;
+}
+.pro_info{
+    background-color: var(--bgwhite);
+    margin-top: 200px;
+    width: 100%;
+}
